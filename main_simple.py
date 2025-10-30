@@ -18,7 +18,7 @@ from datetime import datetime
 import random
 
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -72,9 +72,22 @@ ml_models = {
 # =============================================================================
 
 @app.get("/")
-async def root():
-    """Redirige al dashboard estático."""
-    return RedirectResponse(url="/app/")
+async def root(request: Request):
+    """Raíz: devuelve JSON simple; si el cliente quiere HTML, redirige al dashboard."""
+    accept = request.headers.get("accept", "")
+    if "text/html" in accept and static_path.exists():
+        return RedirectResponse(url="/app/")
+    return {
+        "name": "CyberAI Sentinel",
+        "version": "1.0.0",
+        "status": "running",
+        "timestamp": datetime.utcnow().isoformat(),
+    }
+
+@app.options("/")
+async def options_root():
+    """Responder preflight CORS explícitamente en la raíz."""
+    return JSONResponse(status_code=200, content={})
 
 @app.get("/health")
 async def health_check():

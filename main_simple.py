@@ -78,6 +78,7 @@ async def root(request: Request):
     if "text/html" in accept and static_path.exists():
         return RedirectResponse(url="/app/")
     return {
+        "message": "CyberAI Sentinel API",
         "name": "CyberAI Sentinel",
         "version": "1.0.0",
         "status": "running",
@@ -87,7 +88,13 @@ async def root(request: Request):
 @app.options("/")
 async def options_root():
     """Responder preflight CORS explícitamente en la raíz."""
-    return JSONResponse(status_code=200, content={})
+    headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Headers": "*",
+        "Vary": "Origin",
+    }
+    return JSONResponse(status_code=200, content={}, headers=headers)
 
 @app.get("/health")
 async def health_check():

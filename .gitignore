@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+config.env
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tools/Build
+build/
+dist/
+
+# Docker
+*.log

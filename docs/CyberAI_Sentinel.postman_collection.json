@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "CyberAI Sentinel",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "ML Models",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/v1/ml/models",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "v1", "ml", "models"]
+        }
+      }
+    },
+    {
+      "name": "Analyze Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"user_001\",\n  \"ip_address\": \"192.168.1.100\",\n  \"event_type\": \"login\",\n  \"success\": true,\n  \"response_time\": 0.5,\n  \"bytes_transferred\": 1024,\n  \"hour_of_day\": 14,\n  \"day_of_week\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/security/analyze",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "v1", "security", "analyze"]
+        }
+      }
+    }
+  ]
+}

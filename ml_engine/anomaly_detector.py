@@ -72,8 +72,18 @@ class AnomalyDetector:
                 self.scaler = joblib.load(f"{self.model_path}/scaler.joblib")
                 logger.info("Scaler cargado")
             
-            self.is_trained = True
-            logger.info("Modelos cargados correctamente")
+            # Marcar entrenado solo si todos los artefactos clave están disponibles
+            loaded_models = all([
+                self.isolation_forest is not None,
+                self.dbscan is not None,
+                self.pca is not None,
+                self.scaler is not None,
+            ])
+            self.is_trained = loaded_models
+            if loaded_models:
+                logger.info("Modelos cargados correctamente")
+            else:
+                logger.info("Modelos incompletos: se requerirá entrenamiento")
             
         except Exception as e:
             logger.warning(f"Error cargando modelos: {e}")
@@ -151,8 +161,9 @@ class AnomalyDetector:
         # Mezclar datos
         df = df.sample(frac=1).reset_index(drop=True)
         
-        # Añadir etiquetas (1 = anómalo, 0 = normal)
-        df['is_anomaly'] = [0] * normal_samples + [1] * anomaly_samples
+        # Añadir etiquetas (True = anómalo, False = normal) con dtype booleano
+        df['is_anomaly'] = ([False] * normal_samples + [True] * anomaly_samples)
+        df['is_anomaly'] = df['is_anomaly'].astype(bool)
         df = df.sample(frac=1).reset_index(drop=True)
         
         logger.info(f"Datos sintéticos generados: {len(df)} muestras")

@@ -7,9 +7,9 @@
 [![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn-orange.svg)](https://scikit-learn.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Desarrollado por:** [Vicente Alonso](https://linkedin.com/in/vicente-alonso-cybersecurity)  
+**Desarrollado por:** [Jose Vicente](https://www.linkedin.com/in/jose-vicente-alonso-betancourt-65207a234/)  
 **Especialista en Ciberseguridad y Administración de Sistemas**  
-**Email:** jvab065@gmail.com
+**Email:** jvab5899@gmail.com
 
 ---
 
@@ -141,8 +141,8 @@ Nota: La imagen Docker usa un set mínimo de dependencias (`requirements.docker.
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/vicente-alonso/CyberAI-Sentinel.git
-   cd CyberAI-Sentinel
+   git clone https://github.com/josevicenteprojects/CyberAI_Sentinel.git
+   cd CyberAI_Sentinel
    ```
 
 2. **Instalar dependencias:**
@@ -314,10 +314,10 @@ Para uso en producción, se requerirían:
 
 ## 📞 **Contacto y Soporte**
 
-**Desarrollador:** Vicente Alonso  
-**Email:** jvab065@gmail.com  
-**LinkedIn:** [linkedin.com/in/vicente-alonso-cybersecurity](https://linkedin.com/in/vicente-alonso-cybersecurity)  
-**GitHub:** [github.com/vicente-alonso](https://github.com/vicente-alonso)
+**Desarrollador:** Jose Vicente  
+**Email:** jvab5899@gmail.com  
+**LinkedIn:** [linkedin.com/in/jose-vicente-alonso-betancourt-65207a234](https://www.linkedin.com/in/jose-vicente-alonso-betancourt-65207a234/)  
+**GitHub:** [github.com/josevicenteprojects](https://github.com/josevicenteprojects)
 
 ---
 

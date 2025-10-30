@@ -190,9 +190,9 @@ El proyecto está **listo para ser usado como portfolio** en búsqueda de empleo
 
 ---
 
-**Desarrollado por:** Vicente Alonso  
-**Email:** jvab065@gmail.com  
-**LinkedIn:** [linkedin.com/in/vicente-alonso-cybersecurity](https://linkedin.com/in/vicente-alonso-cybersecurity)  
+**Desarrollado por:** Jose Vicente  
+**Email:** jvab5899@gmail.com  
+**LinkedIn:** [linkedin.com/in/jose-vicente-alonso-betancourt-65207a234](https://www.linkedin.com/in/jose-vicente-alonso-betancourt-65207a234/)  
 **Fecha:** Enero 2025  
 **Versión:** 1.0.0 - Proyecto de Demostración
 

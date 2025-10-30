@@ -81,6 +81,11 @@ async def root(request: Request):
         "message": "CyberAI Sentinel API",
         "name": "CyberAI Sentinel",
         "version": "1.0.0",
+        "developer": {
+            "name": "Jose Vicente",
+            "github": "josevicenteprojects",
+            "email": "jvab5899@gmail.com",
+        },
         "status": "running",
         "timestamp": datetime.utcnow().isoformat(),
     }

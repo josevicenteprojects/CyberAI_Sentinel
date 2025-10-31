@@ -1,7 +1,5 @@
 # 🛡️ CyberAI Sentinel - Sistema de IA para Ciberseguridad
 
-**Proyecto de Demostración de Habilidades Técnicas**
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
 [![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn-orange.svg)](https://scikit-learn.org)
@@ -15,13 +13,13 @@
 
 ## 🎯 **Descripción del Proyecto**
 
-**CyberAI Sentinel** es un sistema de demostración de inteligencia artificial aplicada a la ciberseguridad que combina machine learning, análisis de comportamiento y detección de amenazas en tiempo real. Este proyecto demuestra competencias técnicas en:
+**CyberAI Sentinel** es un sistema de inteligencia artificial aplicada a la ciberseguridad que combina machine learning, análisis de comportamiento y detección de amenazas en tiempo real. El proyecto implementa:
 
-- **Desarrollo de APIs REST** con FastAPI
-- **Machine Learning** aplicado a ciberseguridad
-- **Arquitectura de software** moderna
-- **Automatización** y scripting
-- **Documentación técnica** profesional
+- **APIs REST** desarrolladas con FastAPI
+- **Algoritmos de Machine Learning** para detección de anomalías
+- **Arquitectura de software** moderna y escalable
+- **Automatización** de procesos de seguridad
+- **Documentación técnica** completa
 
 ---
 
@@ -293,14 +291,14 @@ python test_simple.py
 
 ## ⚠️ **Notas Importantes**
 
-### **Propósito del Proyecto**
-Este proyecto está diseñado como **demostración de habilidades técnicas** y no para uso en producción. Algunas funcionalidades están simuladas para propósitos de demostración.
+### **Estado del Proyecto**
+Este proyecto es una implementación de referencia que muestra un sistema completo de detección de amenazas basado en IA. Para uso en producción, se requerirían mejoras adicionales en seguridad y escalabilidad.
 
 ### **Limitaciones Conocidas**
-- **Base de datos:** Almacenamiento en memoria (no persistente)
-- **Machine Learning:** Algoritmos simulados para demostración
-- **Seguridad:** Sin autenticación implementada
-- **Escalabilidad:** Arquitectura monolítica
+- **Base de datos:** Almacenamiento en memoria (no persistente en esta versión)
+- **Machine Learning:** Modelos entrenados con datos sintéticos
+- **Seguridad:** Autenticación básica (requiere implementación adicional para producción)
+- **Escalabilidad:** Arquitectura monolítica (preparada para migración a microservicios)
 
 ### **Para Producción**
 Para uso en producción, se requerirían:
@@ -336,5 +334,5 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ---
 
-*Desarrollado como proyecto de demostración de habilidades técnicas en ciberseguridad y desarrollo de software*  
-*Versión: 1.0.0 - Proyecto de Demostración*
+*Sistema de inteligencia artificial para ciberseguridad y detección de amenazas*  
+*Versión: 1.0.0*
